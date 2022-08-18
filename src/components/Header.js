@@ -4,12 +4,12 @@ import "./style.css";
 
 const Header = props => {
     return (
-        <header className="header flex justify-sb">
+        <header className="header">
             <div >
-                <BsMusicPlayer className="logo"/>
+                <BsMusicPlayer className="logo" />
             </div>
             <div>
-                <CgMusic className="logo"/>
+                <CgMusic className="logo" />
             </div>
         </header>
     );

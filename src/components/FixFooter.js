@@ -27,7 +27,7 @@ const FixFooter = props => {
         duration = audioEl.current.duration;
         time = audioEl.current.currentTime;
 
-        setCurrentSong({ ...currentSong,"progress": time /duration * 100, "length": duration})
+        setCurrentSong({ ...currentSong, "progress": time / duration * 100, "length": duration })
     }
 
     const [isPlaying, setIsPlaying] = useState(false);
@@ -58,7 +58,7 @@ const FixFooter = props => {
                 }
                 return temp;
             })
-         } else {
+        } else {
             props.setSongIndex(() => {
                 let temp = props.songIndex;
                 if (temp - 1 < 0) {
@@ -68,7 +68,7 @@ const FixFooter = props => {
                 }
                 return temp;
             })
-         }
+        }
     }
 
     return (
@@ -76,17 +76,17 @@ const FixFooter = props => {
             {slideUp && <AudioPlayer buttonUp={buttonUp} song={props.songs[props.songIndex]} currentSong={currentSong} audioEl={audioEl} isPlaying={isPlaying} image={image} setIsPlaying={setIsPlaying} skipSong={skipSong} />}
             <div onClick={() => setSlideUp(true)} className='slide_up_btn'></div>
             <audio src={props.songs[props.songIndex].src} onTimeUpdate={onPlaying} ref={audioEl}></audio>
-            <div className="back flex justify-sb">
-                <div className='left audio_ls_item flex'>
+            <div className="back">
+                <div className='left'>
                     <div className="audio_img">
                         <img src={props.songs[props.songIndex].img} />
                     </div>
-                    <div className="audio_info mlr-10">
+                    <div className="audio_info">
                         <p>{props.songs[props.songIndex].title}</p>
                         <p>{props.songs[props.songIndex].artist}</p>
-                    </div> 
+                    </div>
                 </div>
-                <div className='right flex'>
+                <div className='right'>
                     <div>
                         <button className="button_controls" onClick={() => setIsPlaying(!isPlaying)}>
                             <img src={image} className="img_play_pause" />

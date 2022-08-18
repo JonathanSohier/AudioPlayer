@@ -6,10 +6,10 @@ const Midle = props => {
         props.setSongIndex(index)
     }
 
-    return(
+    return (
         <div className='tab-container'>
             {/* Tab Header */}
-            <div className='tab-header flex'>
+            <div className='tab-header'>
                 <a className='active' href='#musics'>
                     Musics
                 </a>
@@ -23,36 +23,36 @@ const Midle = props => {
                     <div className='affichage_music'>
                         <ul>
                             <li>
-                                <div onClick={() => changSong(0)} className='left audio_ls_item flex'>
+                                <div onClick={() => changSong(0)} className='left'>
                                     <div className="audio_img">
                                         <img src={props.songs[0].img} />
                                     </div>
-                                    <div className="audio_info mlr-10">
+                                    <div className="audio_info">
                                         <p>{props.songs[0].title}</p>
                                         <p>{props.songs[0].artist}</p>
-                                    </div> 
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div onClick={() => changSong(1)} className='left audio_ls_item flex'>
+                                <div onClick={() => changSong(1)} className='left'>
                                     <div className="audio_img">
                                         <img src={props.songs[1].img} />
                                     </div>
-                                    <div className="audio_info mlr-10">
+                                    <div className="audio_info">
                                         <p>{props.songs[1].title}</p>
                                         <p>{props.songs[1].artist}</p>
-                                    </div> 
+                                    </div>
                                 </div>
                             </li>
                             <li>
-                                <div onClick={() => changSong(2)} className='left audio_ls_item flex'>
+                                <div onClick={() => changSong(2)} className='left'>
                                     <div className="audio_img">
                                         <img src={props.songs[2].img} />
                                     </div>
-                                    <div className="audio_info mlr-10">
+                                    <div className="audio_info">
                                         <p>{props.songs[2].title}</p>
                                         <p>{props.songs[2].artist}</p>
-                                    </div> 
+                                    </div>
                                 </div>
                             </li>
                             <li>
@@ -60,10 +60,10 @@ const Midle = props => {
                                     <div className="audio_img">
                                         <img src={props.songs[3].img} />
                                     </div>
-                                    <div className="audio_info mlr-10">
+                                    <div className="audio_info">
                                         <p>{props.songs[3].title}</p>
                                         <p>{props.songs[3].artist}</p>
-                                    </div> 
+                                    </div>
                                 </div>
                             </li>
                         </ul>
@@ -71,8 +71,8 @@ const Midle = props => {
                 </div>
                 <div className='tab-content' id='aboutUs'>
                     <div className='affichage_music'>
-                        <p>Musico is an application allowing its user to listen to music from their smartphone.</p>
-                        <p>Size recomanded : iPhone SE</p><br/>
+                        <p>Musico is an application allowing its users to listen music from their smartphone.</p>
+                        <p>Size recomanded : iPhone SE</p><br />
                         <p>Create by Jonthan SOHIER</p>
                         <p>For Fasst</p>
                     </div>
