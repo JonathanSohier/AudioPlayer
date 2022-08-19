@@ -56,7 +56,7 @@ const Midle = props => {
                                 </div>
                             </li>
                             <li>
-                                <div onClick={() => changSong(3)} className='left audio_ls_item flex'>
+                                <div onClick={() => changSong(3)} className='left'>
                                     <div className="audio_img">
                                         <img src={props.songs[3].img} />
                                     </div>
@@ -73,7 +73,7 @@ const Midle = props => {
                     <div className='affichage_music'>
                         <p>Musico is an application allowing its users to listen music from their smartphone.</p>
                         <p>Size recomanded : iPhone SE</p><br />
-                        <p>Create by Jonthan SOHIER</p>
+                        <p>Created by Jonathan SOHIER</p>
                         <p>For Fasst</p>
                     </div>
                 </div>
